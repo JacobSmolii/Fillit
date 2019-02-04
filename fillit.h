@@ -6,7 +6,7 @@
 /*   By: vsmolii <vsmolii@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/01/27 21:09:21 by vsmolii           #+#    #+#             */
-/*   Updated: 2019/02/02 14:37:18 by vsmolii          ###   ########.fr       */
+/*   Updated: 2019/02/03 12:36:18 by vsmolii          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,10 +30,11 @@ typedef struct	s_coord
 
 typedef struct	s_tetr
 {
-	char			**data;
+	char			*data;
 	char			change_symbol;
-	t_coord			min;
-	t_coord			max;
+	t_coord			*massiv;
+	// t_coord			min;
+	// t_coord			max;
 	struct s_tetr	*next;
 }				t_tetr;
 
@@ -55,8 +56,10 @@ int		check_cnt_symb(char *buffer);
 int		checker(char *buffer);
 void	opener(char *source, char *buffer);
 
-t_tetr		*add_list(t_tetr *list, char **buffer);
-t_tetr	*cut_square(t_tetr *list);
+t_tetr		*add_list(t_tetr *list, char *buffer);
+void		cut_tetrimino(t_tetr *list);
+void		get_coords(t_coord *first_hash, t_coord *massiv, int *j, int i);
 
+// t_tetr	*cut_square(t_tetr *list);
 
 # endif
