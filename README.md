@@ -6,3 +6,5 @@ The executable "fillit" takes only one parameter, a file which contains a list o
 ## Input Sample
 
 Each tetraminos 
+
+![image](https://user-images.githubusercontent.com/45500862/66710870-c3784700-ed35-11e9-8db0-57094994480b.png)
