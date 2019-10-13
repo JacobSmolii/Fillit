@@ -5,7 +5,7 @@ The executable "fillit" takes only one parameter, a file which contains a list o
 
 ## Input Sample
 
-In the Input file below I:
+###In the Input file below (all the pieces are correct) I:
 * Check for wrong length lines('\n' in an invalid position).
 * Check for any invalid characters.
 * Count number of '#', should be 4.
