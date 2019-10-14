@@ -14,5 +14,5 @@ The executable "fillit" takes only one parameter, a file which contains a list o
 
 ![image](https://user-images.githubusercontent.com/45500862/66710870-c3784700-ed35-11e9-8db0-57094994480b.png)
 
-<br>
+<hr>
 The next step I create the linked list with `add_list()` function where I find, cut each piece with 4 of '#' and stored them into the struct and I make sure that the piece is shifted to the top left of the map
