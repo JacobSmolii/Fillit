@@ -5,6 +5,8 @@ The executable "fillit" takes only one parameter, a file which contains a list o
 
 ## Solution
 
+The program is divided in two parts:A part that reads, validate, organize the input and a second part that solves the problem using backtracking. here is how the program works.
+
 #### In the Input file below (all pieces are correct) I:
 * Check for wrong length lines('\n' in an invalid position).
 * Check for any invalid characters.
