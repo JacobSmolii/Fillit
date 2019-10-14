@@ -15,4 +15,6 @@ The executable "fillit" takes only one parameter, a file which contains a list o
 ![image](https://user-images.githubusercontent.com/45500862/66710870-c3784700-ed35-11e9-8db0-57094994480b.png)
 
 <hr>
-The next step I create the linked list with `add_list()` function where I find, cut each piece with 4 of '#' and stored them into the struct and I make sure that the piece is shifted to the top left of the map
+The next step I create the linked list with `add_list()` function where I find, cut each piece with 4 of '#' and stored them into the struct and I make sure that the piece is shifted to the top left of the map.
+<hr>
+The solver works using recursive backtracking. If the piese doesn't overlap any other pieces it places it on the map and then tries to call `solve()` function on all of the other pieces. If they all fit with the current piece in place then it succeeds. If not it moves the current piece and tries to solve the rest of the pieces with the current piece in it's new place. If it's moved all the pieces and still can't make them fit on the current map then it exits the solver, makes a larger map, and then tries to solve again.
